@@ -113,7 +113,7 @@ Determinar o Caminho Percorrido pelo Ator paara excutar uma ação
 
     A[Início] --> B{tela de login}
     B --> C[Inserir Email e Senha]
-    C --> D{Validar as Credenciais}
+    C --> D[Validar as Credenciais]
     D --> Sim --> G[Favorite View]
     D --> Não -- B
 ```
