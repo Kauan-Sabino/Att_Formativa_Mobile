@@ -111,11 +111,15 @@ Determinar o Caminho Percorrido pelo Ator paara excutar uma ação
 
 ```mermaid
 
-    A[Início] --> B{tela de login}
+   graph TD
+    A[Início] --> B{Login Usuário}
     B --> C[Inserir Email e Senha]
-    C --> D[Validar as Credenciais]
-    D --> Sim --> G[Favorite View]
-    D --> Não -- B
+    C --> D{Validar as Credenciais}
+    D --> E[SIM]
+    D --> F[NÃO]
+    E --> G[HomePage]
+    F --> B
+
 ```
 
 ## Prototipagem
